@@ -11,6 +11,8 @@ The 'tricks' mentioned by Carlini et. al. are listed below. Alongside, we also s
 - [x] _Global Variance_: This uses global variance of all challenge points for a model to fit the gaussians. This helped us improve our results as expected (global variance helps with small number of shadow models according to the paper).
 - [ ] _Augmentations_: Uses inference on augmented versions of challenge points to fit a multivariate gaussian. Since models trained by the challenge authors did not include random augmentations, this would not help. Our claim is supported by experiments.
 
+Further, we include some of the methods which we tried but are not part of the final solution. These methods include one using the entropy of the outputs and another using a neural network classifier which analyses the output and loss distributions to determine membership of a sample. These methods are possible directions for further research in the area.
+
 ### Steps to reproduce submitted results
 
 **For CIFAR-10 Track**
